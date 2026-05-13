@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ücretsiz Kredi Hesaplama Rehberleri | Aylık Taksit, Kredi Faizi</title>
+  <meta name="description" content="Kredi taksit hesaplama, aylık ödeme planı ve toplam geri ödeme rehberleri. Ücretsiz online kredi hesaplayıcı ile kredinizi planlayın.">
+  <meta name="keywords" content="kredi hesaplama, aylık taksit hesaplama, kredi faizi, ihtiyaç kredisi, konut kredisi hesaplama">
+  <link rel="canonical" href="https://polatozaslan21.github.io/kredihesapla/">
+  <meta property="og:title" content="Ücretsiz Kredi Hesaplama Rehberleri | Aylık Taksit, Kredi Faizi">
+  <meta property="og:description" content="Kredi taksit hesaplama, aylık ödeme planı ve toplam geri ödeme rehberleri. Ücretsiz online kredi hesaplayıcı ile kredinizi planlayın.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://polatozaslan21.github.io/kredihesapla/">
+  <meta property="og:locale" content="tr_TR">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "kredihesapla",
+    "url": "https://polatozaslan21.github.io/kredihesapla/",
+    "description": "Ücretsiz kredi taksit hesaplama rehberleri ve araçları"
+  }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">kredi<span>hesapla</span></a>
+    <ul>
+      <li><a href="index.html" class="active">Ana Sayfa</a></li>
+      <li><a href="index.html#hesapla">Hesapla</a></li>
+      <li><a href="index.html#blog">Blog</a></li>
+      <li><a href="https://covrixa.com/tr/" target="_blank" rel="noopener">Covrixa</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>Ücretsiz Kredi Hesaplama Rehberleri</h1>
+    <p>Aylık taksit, toplam geri ödeme ve faiz maliyetinizi kolayca hesaplayın. İhtiyaç, konut ve taşıt kredisi için kapsamlı rehberler.</p>
+  </div>
+</section>
+
+<section class="section" id="hesapla">
+  <div class="container">
+    <h2>Kredi Taksit Hesaplayıcı</h2>
+    <p style="margin-bottom:20px;text-align:center;color:var(--text-light);">Kredi tutarı, faiz oranı ve vadeyi girerek aylık taksitinizi ve toplam geri ödemenizi hesaplayın.</p>
+    <div class="calculator-card">
+      <h3>Kredi Hesaplama Aracı</h3>
+      <div class="form-group">
+        <label for="amount">Kredi Tutarı (TL)</label>
+        <input type="number" id="amount" value="100000" min="1000" step="1000">
+      </div>
+      <div class="form-group">
+        <label for="rate">Aylık Faiz Oranı (%)</label>
+        <input type="number" id="rate" value="3.5" min="0.01" step="0.1">
+      </div>
+      <div class="form-group">
+        <label for="months">Vade (Ay)</label>
+        <select id="months">
+          <option value="6">6 Ay</option>
+          <option value="12">12 Ay</option>
+          <option value="24">24 Ay</option>
+          <option value="36" selected>36 Ay</option>
+          <option value="48">48 Ay</option>
+          <option value="60">60 Ay</option>
+          <option value="84">84 Ay</option>
+          <option value="120">120 Ay</option>
+        </select>
+      </div>
+      <button class="btn" onclick="calculateLoan()">Hesapla</button>
+      <p id="error-msg" style="display:none;color:#e74c3c;font-weight:600;margin-bottom:10px;">Lütfen geçerli pozitif değerler girin.</p>
+      <div class="result-box" id="result">
+        <div style="margin-bottom:10px;">
+          <small>Aylık Taksit</small>
+          <div class="amount" id="result-monthly">0 TL</div>
+        </div>
+        <div class="detail">Toplam Geri Ödeme: <strong id="result-total">0 TL</strong></div>
+        <div class="detail">Toplam Faiz Maliyeti: <strong id="result-interest">0 TL</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="blog">
+  <div class="container">
+    <h2>Kredi Hesaplama Rehberleri</h2>
+    <p style="margin-bottom:16px;color:var(--text-light);">İhtiyaç, konut ve taşıt kredisi hakkında detaylı hesaplama rehberleri.</p>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <h3><a href="blog1.html">Kredi Taksit Nasıl Hesaplanır? 2026 Rehberi</a></h3>
+        <p>Kredi taksit hesaplama formülü, eşit taksit (anüite) yöntemi ve bankaların uyguladığı masraflarla birlikte gerçek maliyet analizi.</p>
+        <div class="meta">5 dk okuma &middot; Temel Rehber</div>
+      </div>
+      <div class="blog-card">
+        <h3><a href="blog2.html">İhtiyaç Kredisi Hesaplama: En Uygun Faiz Oranları</a></h3>
+        <p>2026'da ihtiyaç kredisi faiz oranları, vade seçenekleri ve aylık taksit karşılaştırmaları. En düşük maliyetli kredi nasıl bulunur?</p>
+        <div class="meta">6 dk okuma &middot; İhtiyaç Kredisi</div>
+      </div>
+      <div class="blog-card">
+        <h3><a href="blog3.html">Konut Kredisi Hesaplama Rehberi</a></h3>
+        <p>Konut kredisi taksitini nasıl hesaplarsınız? Uzun vadeli mortgage hesabı, erken ödeme ve toplam faiz maliyeti analizi.</p>
+        <div class="meta">7 dk okuma &middot; Konut Kredisi</div>
+      </div>
+      <div class="blog-card">
+        <h3><a href="blog4.html">Taşıt Kredisi Taksit Hesaplama</a></h3>
+        <p>Araç kredisi hesaplama yöntemleri, taşıt kredisi faiz oranları ve 2026 güncel kampanyalarla en avantajlı seçenekler.</p>
+        <div class="meta">5 dk okuma &middot; Taşıt Kredisi</div>
+      </div>
+      <div class="blog-card">
+        <h3><a href="blog5.html">Kredi Erken Kapatma: Tasarruf Hesabı</a></h3>
+        <p>Kredinizi erken kapattığınızda ne kadar faiz tasarrufu yaparsınız? Erken ödeme avantajları ve erken kapatma maliyeti hesaplama.</p>
+        <div class="meta">6 dk okuma &middot; Tasarruf</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="covrixa-promo">
+  <div class="container">
+    <h3>Gelişmiş Kredi Hesaplayıcı Covrixa'da</h3>
+    <p>Ödeme planı tablosu, erken ödeme simülasyonu ve detaylı faiz analizi için Covrixa'yı deneyin.</p>
+    <a href="https://covrixa.com/tr/kredi-hesaplayici/" class="btn-outline" target="_blank" rel="noopener">Covrixa Kredi Hesaplayıcı →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 kredihesapla &middot; Tüm hakları saklıdır. &middot; <a href="https://covrixa.com/tr/" target="_blank" rel="noopener">Covrixa</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
