@@ -253,3 +253,24 @@ footer {
   .post-content { padding: 20px; }
   .calculator-card { padding: 20px; }
 }
+
+@media (max-width: 430px) {
+  nav ul li a { padding: 5px 8px; font-size: 0.8rem; }
+  .post-content { padding: 15px; }
+  .post-content table { font-size: 0.8rem; }
+  .post-content table th,
+  .post-content table td { padding: 6px; }
+  .blog-card { padding: 16px; }
+}
+
+@media (max-width: 390px) {
+  .hero h1 { font-size: 1.3rem; }
+  .hero p { font-size: 0.88rem; }
+  .blog-grid { gap: 14px; }
+}
+
+@media (max-width: 320px) {
+  .container { padding: 0 10px; }
+  .calculator-card { padding: 12px; }
+  .blog-grid { grid-template-columns: 1fr; }
+}
